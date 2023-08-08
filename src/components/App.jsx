@@ -5,7 +5,7 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Mark Webber",
-      action: "react",
+      action: "reacted to your recent post",
       target: "My first tournament today!",
       time: "1m",
       read: false,
@@ -13,7 +13,7 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Angela Gray",
-      action: "follow",
+      action: "followed you",
       target: "",
       time: "5m",
       read: false,
@@ -21,7 +21,7 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Jacob Thompson",
-      action: "join",
+      action: "has joined your group",
       target: "Chess Club",
       time: "1 day",
       read: false,
@@ -29,7 +29,7 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Rizky Hasanuddin",
-      action: "pm",
+      action: "sent you a private message",
       target: "",
       time: "5 days",
       message: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
@@ -39,15 +39,16 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Kimberly Smith",
-      action: "comment",
+      action: "commented on your picture",
       target: "",
       time: "1 week",
+      picture: "Picture Here",
       read: true,
     },
     {
       id: crypto.randomUUID(),
       name: "Nathan Peterson",
-      action: "react",
+      action: "reacted to your recent post",
       target: "5 end-game strategies to increase your win rate",
       time: "2 weeks",
       read: true,
@@ -55,7 +56,7 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Anna Kim",
-      action: "leave",
+      action: "left the group",
       target: "Chess Club",
       time: "2 weeks",
       read: true,
