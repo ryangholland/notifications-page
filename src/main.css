@@ -23,6 +23,11 @@
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .main {
   margin: 2rem 1rem;
 }
@@ -62,5 +67,61 @@ h1 {
   font-weight: inherit;
   line-height: inherit;
   padding: 0;
-  color: hsl(var(--clr-neu-dark-grayish-blue-hsl))
+  color: hsl(var(--clr-neu-dark-grayish-blue-hsl));
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.notification-div {
+  border-radius: 5px;
+  display: flex;
+
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.unread-bg {
+  background-color: hsl(var(--clr-neu-very-light-grayish-blue-hsl));
+}
+
+.avatar img {
+  height: 40px;
+  min-width: 40px;
+}
+
+.notification-text {
+  color: hsla(var(--clr-neu-dark-grayish-blue-hsl), 0.7);
+  font-weight: 800;
+}
+
+.notification-time {
+  opacity: 0.3;
+  margin-top: 0.25rem;
+}
+
+.notification-name {
+  color: black;
+  opacity: 1;
+  margin-right: 0.25rem;
+}
+
+.notification-target {
+  color: hsl(var(--clr-pri-blue-hsl));
+  opacity: 1;
+  margin-left: 0.25rem;
+}
+
+.unread-dot {
+  height: 9px;
+  width: 9px;
+  background-color: hsl(var(--clr-pri-red-hsl));
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.25rem;
 }
