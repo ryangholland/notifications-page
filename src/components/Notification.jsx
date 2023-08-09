@@ -1,5 +1,3 @@
-import pic from "../assets/images/angela.webp";
-
 function Notification({
   id,
   avatar,

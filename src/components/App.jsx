@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Notification from "./Notification";
 import angela from "../assets/images/angela.webp";
 import anna from "../assets/images/anna.webp";
@@ -10,7 +11,7 @@ import chesspic from "../assets/images/chesspic.webp";
 
 
 function App() {
-  const notifications = [
+  const data = [
     {
       id: crypto.randomUUID(),
       name: "Mark Webber",
@@ -79,6 +80,15 @@ function App() {
     },
   ];
 
+  const [notifications, setNotifications] = useState(data);
+
+  const markRead = () => {
+    setNotifications(notifications.map(notification => {
+      notification.read = true;
+      return notification;
+    }))
+  }
+
   return (
     <>
       <div className="main">
@@ -88,7 +98,7 @@ function App() {
             <div className="notifications-counter">3</div>
           </div>
           <div className="header-right">
-            <button className="mark-read-btn">Mark all as read</button>
+            <button className="mark-read-btn" onClick={markRead}>Mark all as read</button>
           </div>
         </div>
         <div className="notification-list">
