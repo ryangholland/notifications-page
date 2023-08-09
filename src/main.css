@@ -1,0 +1,66 @@
+:root {
+  --clr-pri-red-hsl: 1, 90%, 64%;
+  --clr-pri-blue-hsl: 219, 85%, 26%;
+
+  --clr-neu-white-hsl: 0, 0%, 100%;
+  --clr-neu-very-light-grayish-blue-hsl: 210, 60%, 98%;
+  --clr-neu-light-grayish-blue-1-hsl: 211, 68%, 94%;
+  --clr-neu-light-grayish-blue-2-hsl: 205, 33%, 90%;
+  --clr-neu-grayish-blue-hsl: 219, 14%, 63%;
+  --clr-neu-dark-grayish-blue-hsl: 219, 12%, 42%;
+  --clr-neu-very-dark-blue-hsl: 224, 21%, 14%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.main {
+  margin: 2rem 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header-left {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.notifications-counter {
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  font-weight: 800;
+  background-color: hsl(var(--clr-pri-blue-hsl));
+  color: hsl(var(--clr-neu-white-hsl));
+}
+
+.mark-read-btn {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+  color: hsl(var(--clr-neu-dark-grayish-blue-hsl))
+}
