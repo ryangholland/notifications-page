@@ -23,10 +23,11 @@ function Notification({
             {!read && <span className="unread-dot"></span>}
           </p>
           <p className="notification-time">{time} ago</p>
+          {message && <div className="message-div">{message}</div>}
         </div>
-        {picture && <div>{picture}</div>}
+        {picture && <img className="comment-pic" src={pic} alt="#" />}
       </div>
-      {message && <div className="message-div">{message}</div>}
+      
     </>
   );
 }
