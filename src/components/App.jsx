@@ -1,10 +1,20 @@
 import Notification from "./Notification";
+import angela from "../assets/images/angela.webp";
+import anna from "../assets/images/anna.webp";
+import jacob from "../assets/images/jacob.webp";
+import kimberly from "../assets/images/kimberly.webp";
+import mark from "../assets/images/mark.webp";
+import nathan from "../assets/images/nathan.webp";
+import rizky from "../assets/images/rizky.webp";
+import chesspic from "../assets/images/chesspic.webp";
+
 
 function App() {
   const notifications = [
     {
       id: crypto.randomUUID(),
       name: "Mark Webber",
+      avatar: mark,
       action: "reacted to your recent post",
       target: "My first tournament today!",
       time: "1m",
@@ -13,6 +23,7 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Angela Gray",
+      avatar: angela,
       action: "followed you",
       target: "",
       time: "5m",
@@ -21,6 +32,7 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Jacob Thompson",
+      avatar: jacob,
       action: "has joined your group",
       target: "Chess Club",
       time: "1 day",
@@ -29,6 +41,7 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Rizky Hasanuddin",
+      avatar: rizky,
       action: "sent you a private message",
       target: "",
       time: "5 days",
@@ -39,15 +52,17 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Kimberly Smith",
+      avatar: kimberly,
       action: "commented on your picture",
       target: "",
       time: "1 week",
-      picture: "Picture Here",
+      picture: chesspic,
       read: true,
     },
     {
       id: crypto.randomUUID(),
       name: "Nathan Peterson",
+      avatar: nathan,
       action: "reacted to your recent post",
       target: "5 end-game strategies to increase your win rate",
       time: "2 weeks",
@@ -56,6 +71,7 @@ function App() {
     {
       id: crypto.randomUUID(),
       name: "Anna Kim",
+      avatar: anna,
       action: "left the group",
       target: "Chess Club",
       time: "2 weeks",

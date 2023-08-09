@@ -2,6 +2,7 @@ import pic from "../assets/images/angela.webp";
 
 function Notification({
   id,
+  avatar,
   name,
   action,
   target,
@@ -14,7 +15,7 @@ function Notification({
     <>
       <div className={`notification-div ${!read && 'unread-bg'}`} >
         <div className="avatar">
-          <img src={pic} alt="#" />
+          <img src={avatar} alt="#" />
         </div>
         <div className="notification-content">
           <p className="notification-text">
@@ -25,7 +26,7 @@ function Notification({
           <p className="notification-time">{time} ago</p>
           {message && <div className="message-div">{message}</div>}
         </div>
-        {picture && <img className="comment-pic" src={pic} alt="#" />}
+        {picture && <img className="comment-pic" src={picture} alt="#" />}
       </div>
       
     </>
