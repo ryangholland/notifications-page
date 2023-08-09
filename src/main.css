@@ -30,6 +30,9 @@ img {
 
 .main {
   margin: 2rem 1rem;
+  max-width: 660px;
+  padding: 0.5rem;
+  background-color: hsl(var(--clr-neu-white-hsl));
 }
 
 .header {
@@ -132,10 +135,24 @@ h1 {
   padding-right: 1rem;
   color: hsl(var(--clr-neu-dark-grayish-blue-hsl));
   margin-top: 0.5rem;
+  max-width: 500px;
 }
 
 .comment-pic {
   height: 35px;
   width: 35px;
   margin: auto;
+}
+
+@media (min-width: 650px) {
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: aliceblue;
+  }
+  
+  .main {
+    padding: 2rem;
+  }
 }
