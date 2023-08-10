@@ -73,6 +73,11 @@ h1 {
   color: hsl(var(--clr-neu-dark-grayish-blue-hsl));
 }
 
+.mark-read-btn:hover {
+  cursor: pointer;
+  color: hsl(var(--clr-pri-blue-hsl));
+}
+
 .notification-list {
   display: flex;
   flex-direction: column;
@@ -111,12 +116,19 @@ h1 {
   color: black;
   opacity: 1;
   margin-right: 0.25rem;
+  text-decoration: none;
 }
 
 .notification-target {
-  color: hsl(var(--clr-pri-blue-hsl));
+  color: hsla(var(--clr-neu-dark-grayish-blue-hsl), 1);
   opacity: 1;
   margin-left: 0.25rem;
+  text-decoration: none;
+}
+
+.notification-name:hover,
+.notification-target:hover {
+  color: hsl(var(--clr-pri-blue-hsl));
 }
 
 .unread-dot {
@@ -138,10 +150,24 @@ h1 {
   max-width: 500px;
 }
 
+.message-div:hover {
+  cursor: pointer;
+  background-color: hsl(var(--clr-neu-light-grayish-blue-2-hsl));
+}
+
+.message-div a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .comment-pic {
-  height: 35px;
-  width: 35px;
-  margin: auto;
+  height: 45px;
+  width: 45px;
+  margin-left: auto;
+}
+
+.comment-pic:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 650px) {
