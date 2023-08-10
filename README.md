@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/ryangholland/notifications-page]
-- Live Site URL: [https://ryangholland.github.io/notifications-page]
+- Live Site URL: [https://coruscating-bunny-989b25.netlify.app/]
 
 ### Built with
 
